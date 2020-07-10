@@ -8,7 +8,13 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/home/tree',
+        comments: () => import('@/components/Tree.vue')
+      }
+    ]
   },
   {
     path: '/about',
