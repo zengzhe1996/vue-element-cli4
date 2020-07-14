@@ -9,10 +9,15 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home,
+    redirect: '/home/tree',
     children: [
       {
         path: '/home/tree',
-        comments: () => import('@/components/Tree.vue')
+        component: () => import('@/components/Tree.vue')
+      },
+      {
+        path: '/home/demo',
+        component: () => import('@/components/Demo.vue')
       }
     ]
   },

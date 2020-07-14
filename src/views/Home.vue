@@ -16,12 +16,14 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import MyMenu from '@/components/Menu.vue'
+import MyTree from '@/components/Tree.vue'
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
-    MyMenu
+    MyMenu,
+    MyTree
   }
 }
 </script>
